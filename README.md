@@ -1,2 +1,2 @@
-# sipas
-Sistem Informasi Pengelolaan Arsip Surat
+# SIPAS
+Sistem Informasi Pengelolaan Arsip Surat berbasis VB.NET
