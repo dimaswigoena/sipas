@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E310933E-0BB9-48EA-AC6A-55E8F999C71A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AplikasiArsipSurat.My.MyApplication</StartupObject>
+    <RootNamespace>AplikasiArsipSurat</RootNamespace>
+    <AssemblyName>AplikasiArsipSurat</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AplikasiArsipSurat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AplikasiArsipSurat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_CRUD_SuratKeluar.Designer.vb">
+      <DependentUpon>Form_CRUD_SuratKeluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CRUD_SuratKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CRUD_SuratMasuk.Designer.vb">
+      <DependentUpon>Form_CRUD_SuratMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CRUD_SuratMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CRUD_UnitKerja.Designer.vb">
+      <DependentUpon>Form_CRUD_UnitKerja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CRUD_UnitKerja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DaftarSuratMasuk.Designer.vb">
+      <DependentUpon>Form_DaftarSuratMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DaftarSuratMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HalamanUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HalamanUtama.Designer.vb">
+      <DependentUpon>Form_HalamanUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SplashScreen.Designer.vb">
+      <DependentUpon>Form_SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TampilanFileSurat.Designer.vb">
+      <DependentUpon>Form_TampilanFileSurat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TampilanFileSurat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koneksi.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_CRUD_SuratKeluar.resx">
+      <DependentUpon>Form_CRUD_SuratKeluar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CRUD_SuratMasuk.resx">
+      <DependentUpon>Form_CRUD_SuratMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CRUD_UnitKerja.resx">
+      <DependentUpon>Form_CRUD_UnitKerja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DaftarSuratMasuk.resx">
+      <DependentUpon>Form_DaftarSuratMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HalamanUtama.resx">
+      <DependentUpon>Form_HalamanUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SplashScreen.resx">
+      <DependentUpon>Form_SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TampilanFileSurat.resx">
+      <DependentUpon>Form_TampilanFileSurat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxFOXITPHANTOMLib">
+      <Guid>{3A8BD65E-9922-4162-A649-83F2D5326BBE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FOXITPHANTOMLib">
+      <Guid>{3A8BD65E-9922-4162-A649-83F2D5326BBE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
