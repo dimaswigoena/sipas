@@ -16,3 +16,8 @@ SIPAS (Sistem Informasi Pengelolaan Arsip Surat) adalah sebuah perangkat lunak y
 ## Dibuat Menggunakan
 
 **VB.NET**
+
+
+## Digunakan oleh
+
+**PT. Karya Muba Abadi**
